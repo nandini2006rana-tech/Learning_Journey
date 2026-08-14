@@ -1,0 +1,21 @@
+info = 'python is important now days'
+print('now'in info)
+# we can also find out particular word indexing with the help of find()
+print(info.find('now'))
+print(info.find('PYTHON'))
+# find() does not return error instead of that it will give you -1 in output.
+'''to import regex we have to write 
+ import re'''
+import re
+'''in code to find out something we can use indexing , find() function and in regex we have a re.search tool who works similar to find from string but also gives 
+ more information than that '''
+here =(re.search('important',info))
+print(here)
+text = "Hello Nandini 2026 Nandini"
+# remember the pattern used in re.search is (,pattern,string)
+
+you = re.search("[0-9][.][0-9][0-9]", text)
+print(you)
+'''here .(dot) is a meta character means special character in regex, it means dot will count as any character except new line character (\n)
+but if we use like this [.] then it means it will match only to dot in a string'''
+#here re.search tool looks only first occurrence .
