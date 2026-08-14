@@ -12,7 +12,7 @@ import re
 here =(re.search('important',info))
 print(here)
 text = "Hello Nandini 2026 Nandini"
-# remember the pattern used in re.search is (,pattern,string)
+# remember the pattern used in re.search is (pattern,string)
 
 you = re.search("[0-9][.][0-9][0-9]", text)
 print(you)
