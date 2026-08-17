@@ -9,8 +9,8 @@ print(info.find('PYTHON'))
 '''to import regex we have to write 
  import re'''
 import re
-'''in code to find out something we can use indexing , find() function and in regex we have a re.search tool who works similar to find from string but also gives 
- more information than that '''
+'''in code to find out something we can use indexing , find() function and in regex we have a re.search() who looks anywhere in the string to find out alphabet or numbers but also gives 
+ more information than that like it will give you indexing as span and match.'''
 here =(re.search('important',info))
 print(here)
 text = "Hello Nandini 2026 Nandini"
@@ -19,6 +19,7 @@ text = "Hello Nandini 2026 Nandini"
 
 you = re.search("[0-9][.][0-9][0-9]", text)
 print(you)
+
 '''here .(dot) is a meta character means special character in regex, it means dot will count as any character except new line character (\n)
 but if we use like this [.] then it means it will match only to dot in a string'''
 #here re.search tool looks only first occurrence .
